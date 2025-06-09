@@ -1,0 +1,736 @@
+Sun Jun  8 05:07:01 PM PDT 2025
+Linux csslab6.uwb.edu 5.14.0-503.35.1.el9_5.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+uid=1325499(aguijos) gid=2121325499(aguijos) groups=2121325499(aguijos),605559(lab-access) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+=====================================================
+1. If the section below is empty, the program compiles 
+   without warnings with -Wall -Wextra flags
+=====================================================
+history.cpp: In member function ‘virtual void History::execute(Inventory&, CustomerTable&)’:
+history.cpp:7:35: warning: unused parameter ‘inv’ [-Wunused-parameter]
+    7 | void History::execute(Inventory & inv, CustomerTable &manager) {
+      |                       ~~~~~~~~~~~~^~~
+main.cpp: In function ‘void loadCommand(std::string, Inventory&, CustomerTable&)’:
+main.cpp:16:25: warning: unused parameter ‘commandFileName’ [-Wunused-parameter]
+   16 | void loadCommand(string commandFileName, Inventory &inventory,
+      |                  ~~~~~~~^~~~~~~~~~~~~~~
+return.cpp: In constructor ‘Return::Return(int, char, char, const string&)’:
+return.cpp:7:37: warning: unused parameter ‘mediaType’ [-Wunused-parameter]
+    7 | Return::Return(int customerId, char mediaType, char movieType,
+      |                                ~~~~~^~~~~~~~~
+=====================================================
+2. If the section below is empty or has the expected output 
+    the program puns and produces correct output
+=====================================================
+Do not know how to create movie: C
+Do not know how to create movie: C
+Do not know how to create movie: C
+Movie: F, 10, Nora Ephron, Sleepless in Seattle, 1993 added 
+Do not know how to create movie: D
+Do not know how to create movie: D
+Do not know how to create movie: D
+Movie: F, 10, Woody Allen, Annie Hall, 1977 added 
+Movie: F, 10, Rob Reiner, When Harry Met Sally, 1989 added 
+Do not know how to create movie: D
+Do not know how to create movie: D
+Movie: F, 10, Gore Verbinski, Pirates of the Caribbean, 2003 added 
+Movie: F, 10, Different Years, Pirates of the Caribbean, 2000 added 
+Movie: F, 10, Joel Coen, Fargo, 1996 added 
+Do not know how to create movie: D
+Do not know how to create movie: D
+Do not know how to create movie: C
+Do not know how to create movie: Z
+Do not know how to create movie: C
+Do not know how to create movie: C
+Do not know how to create movie: C
+Do not know how to create movie: C
+Do not know how to create movie: C
+Do not know how to create movie: C
+Do not know how to create movie: C
+Do not know how to create movie: Z
+Do not know how to create movie: C
+Do not know how to create movie: C
+Do not know how to create movie: C
+Movie: F, 10, John Landis, National Lampoon's Animal House, 1978 added 
+Do not know how to create movie: D
+Movie: F, 10, Nora Ephron, You've Got Mail, 1998 added 
+Do not know how to create movie: 
+Do not know how to create movie: 
+Do not know how to create movie: 
+Do not know how to create movie: 
+Do not know how to create movie: 
+All Comedy Movies:
+F, 10, Nora Ephron, Sleepless in Seattle, 1993
+F, 10, Woody Allen, Annie Hall, 1977
+F, 10, Rob Reiner, When Harry Met Sally, 1989
+F, 10, Gore Verbinski, Pirates of the Caribbean, 2003
+F, 10, Different Years, Pirates of the Caribbean, 2000
+F, 10, Joel Coen, Fargo, 1996
+F, 10, John Landis, National Lampoon's Animal House, 1978
+F, 10, Nora Ephron, You've Got Mail, 1998
+Start testStore1
+End testStore1
+Start testStore2
+End testStore2
+=====================================
+Start testStoreFinal
+End testStoreFinal
+=====================================
+=====================================================
+3. If the section below is empty, then there are no clang-tidy warnings 
+   (ignore warnings from system headers, such as "13554 warnings generated.")
+=====================================================
+[1/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/borrow.cpp.
+18619 warnings generated.
+[2/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/classic.cpp.
+18619 warnings generated.
+[3/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/comedy.cpp.
+35651 warnings generated.
+[4/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/command.cpp.
+57660 warnings generated.
+[5/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/customer.cpp.
+74502 warnings generated.
+[6/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/customerTable.cpp.
+91058 warnings generated.
+[7/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/hashtable.cpp.
+111439 warnings generated.
+[8/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/history.cpp.
+130055 warnings generated.
+[9/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/inventorycommand.cpp.
+148392 warnings generated.
+[10/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/inventory.cpp.
+165161 warnings generated.
+[11/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/main.cpp.
+184309 warnings generated.
+[12/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/movie.cpp.
+204724 warnings generated.
+[13/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/return.cpp.
+223340 warnings generated.
+[14/14] Processing file /home/NETID/aguijos/343-movies-Joe4001/store_test.cpp.
+241228 warnings generated.
+/home/NETID/aguijos/343-movies-Joe4001/borrow.cpp:12:10: error: implicit conversion 'Customer *' -> 'bool' [readability-implicit-bool-conversion,-warnings-as-errors]
+   12 |     if (!customer) {
+      |         ~^       
+      |                   == nullptr
+/home/NETID/aguijos/343-movies-Joe4001/borrow.cpp:17:10: error: implicit conversion 'Movie *' -> 'bool' [readability-implicit-bool-conversion,-warnings-as-errors]
+   17 |     if (!movie) {
+      |         ~^    
+      |                == nullptr
+/home/NETID/aguijos/343-movies-Joe4001/borrow.cpp:37:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   37 |     char mediaType, movieType;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/NETID/aguijos/343-movies-Joe4001/comedy.cpp:2:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
+    2 | #include <sstream>
+      | ^        ~~~~~~~~~
+      |          <iostream>
+    3 | #include <iostream>
+      |          ~~~~~~~~~~
+      |          <sstream>
+/home/NETID/aguijos/343-movies-Joe4001/comedy.cpp:11:50: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   11 |     if (movieData.title != other.movieData.title)
+      |                                                  ^
+      |                                                   {
+   12 |         return movieData.title < other.movieData.title;
+      |                                                        
+/home/NETID/aguijos/343-movies-Joe4001/comedy.cpp:31:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   31 |     std::string director, title;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/NETID/aguijos/343-movies-Joe4001/comedy.cpp:36:21: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   36 |     if (type != 'F') return nullptr;
+      |                     ^               
+      |                      {
+/home/NETID/aguijos/343-movies-Joe4001/comedy.cpp:37:26: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   37 |     if (ss.peek() == ',') ss.ignore();
+      |                          ^            
+      |                           {
+/home/NETID/aguijos/343-movies-Joe4001/comedy.cpp:38:26: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   38 |     if (ss.peek() == ' ') ss.ignore();
+      |                          ^            
+      |                           {
+/home/NETID/aguijos/343-movies-Joe4001/comedy.cpp:42:26: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   42 |     if (ss.peek() == ',') ss.ignore();
+      |                          ^            
+      |                           {
+/home/NETID/aguijos/343-movies-Joe4001/comedy.cpp:43:26: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   43 |     if (ss.peek() == ' ') ss.ignore();
+      |                          ^            
+      |                           {
+/home/NETID/aguijos/343-movies-Joe4001/comedy.cpp:47:49: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   47 |     if (!director.empty() && director[0] == ' ') director = director.substr(1);
+      |                                                 ^                              
+      |                                                  {
+/home/NETID/aguijos/343-movies-Joe4001/comedy.cpp:51:43: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   51 |     if (!title.empty() && title[0] == ' ') title = title.substr(1);
+      |                                           ^                        
+      |                                            {
+/home/NETID/aguijos/343-movies-Joe4001/command.cpp:2:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
+    2 | #include <sstream>
+      | ^        ~~~~~~~~~
+      |          <algorithm>
+    3 | #include <iostream>
+    4 | #include <algorithm>
+      |          ~~~~~~~~~~~
+      |          <sstream>
+/home/NETID/aguijos/343-movies-Joe4001/command.h:4:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
+    4 | #include "inventory.h"
+      | ^        ~~~~~~~~~~~~~
+      |          "customerTable.h"
+    5 | #include "customerTable.h"
+      |          ~~~~~~~~~~~~~~~~~
+      |          "inventory.h"
+/home/NETID/aguijos/343-movies-Joe4001/customer.cpp:28:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   28 |     std::string last, first;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/NETID/aguijos/343-movies-Joe4001/inventory.cpp:15:28: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   15 |     if (it != movies.end()) return it->second;
+      |                            ^                  
+      |                             {
+/home/NETID/aguijos/343-movies-Joe4001/main.cpp:61:13: error: implicit conversion 'Movie *' -> 'bool' [readability-implicit-bool-conversion,-warnings-as-errors]
+   61 |         if (movie && movie->getType() == "F") { // Only add Comedy
+      |             ^
+      |             (     != nullptr)
+/home/NETID/aguijos/343-movies-Joe4001/main.cpp:63:16: error: 'if' statement is unnecessary; deleting null pointer has no effect [readability-delete-null-pointer,-warnings-as-errors]
+   63 |         } else if (movie) {
+      |                ^~~~~~~~~~~~
+   64 |             delete movie; // Clean up non-comedy movies
+   65 |         }
+      |         ~
+/home/NETID/aguijos/343-movies-Joe4001/main.cpp:63:20: error: implicit conversion 'Movie *' -> 'bool' [readability-implicit-bool-conversion,-warnings-as-errors]
+   63 |         } else if (movie) {
+      |                    ^
+note: this fix will not be applied because it overlaps with another fix
+/home/NETID/aguijos/343-movies-Joe4001/main.cpp:74:10: error: 'auto m' can be declared as 'auto *m' [llvm-qualified-auto,readability-qualified-auto,-warnings-as-errors]
+   74 |     for (auto m : movies) {
+      |          ^~~~
+      |          auto *
+/home/NETID/aguijos/343-movies-Joe4001/movie.cpp:2:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
+    2 | #include <sstream>
+      | ^        ~~~~~~~~~
+      |          <algorithm>
+    3 | #include <iostream>
+    4 | #include <algorithm>
+      |          ~~~~~~~~~~~
+      |          <sstream>
+/home/NETID/aguijos/343-movies-Joe4001/movie.h:4:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
+    4 | #include <string>
+      | ^        ~~~~~~~~
+      |          <map>
+    5 | #include <map>
+      |          ~~~~~
+      |          <string>
+Suppressed 241190 warnings (241190 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+23 warnings treated as errors
+=====================================================
+4. If the section below is empty, clang-format does not find any formatting issues
+   You can fix formatting errors using "clang-format -i <filename>" on command line
+=====================================================
+Running clang-format on ./borrow.cpp
+7,8c7,10
+< Borrow::Borrow(int customerId, char mediaType, char movieType, const std::string& movieKey)
+<     : customerId(customerId), mediaType(mediaType), movieType(movieType), movieKey(movieKey) {}
+---
+> Borrow::Borrow(int customerId, char mediaType, char movieType,
+>                const std::string &movieKey)
+>     : customerId(customerId), mediaType(mediaType), movieType(movieType),
+>       movieKey(movieKey) {}
+10,26c12,29
+< void Borrow::execute(Inventory& inventory, CustomerTable& customers) {
+<     Customer* customer = customers.getCustomer(customerId);
+<     if (!customer) {
+<         std::cout << "ERROR: Customer ID " << customerId << " not found." << std::endl;
+<         return;
+<     }
+<     Movie* movie = inventory.searchMovie(movieKey);
+<     if (!movie) {
+<         std::cout << "ERROR: Movie not found: " << movieKey << std::endl;
+<         return;
+<     }
+<     if (movie->getStock() > 0) {
+<         movie->decreaseStock();
+<         customer->addTransaction("Borrowed: " + movie->print());
+<     } else {
+<         std::cout << "ERROR: Movie out of stock: " << movieKey << std::endl;
+<     }
+---
+> void Borrow::execute(Inventory &inventory, CustomerTable &customers) {
+>   Customer *customer = customers.getCustomer(customerId);
+>   if (!customer) {
+>     std::cout << "ERROR: Customer ID " << customerId << " not found."
+>               << std::endl;
+>     return;
+>   }
+>   Movie *movie = inventory.searchMovie(movieKey);
+>   if (!movie) {
+>     std::cout << "ERROR: Movie not found: " << movieKey << std::endl;
+>     return;
+>   }
+>   if (movie->getStock() > 0) {
+>     movie->decreaseStock();
+>     customer->addTransaction("Borrowed: " + movie->print());
+>   } else {
+>     std::cout << "ERROR: Movie out of stock: " << movieKey << std::endl;
+>   }
+29,31c32
+< BorrowFactory::BorrowFactory() {
+<     registerType("B", this);
+< }
+---
+> BorrowFactory::BorrowFactory() { registerType("B", this); }
+33,38c34,39
+< Command* BorrowFactory::makeCommand(const std::string& data) const {
+<     std::istringstream ss(data);
+<     std::string commandType;
+<     int customerId;
+<     char mediaType, movieType;
+<     std::string movieKey;
+---
+> Command *BorrowFactory::makeCommand(const std::string &data) const {
+>   std::istringstream ss(data);
+>   std::string commandType;
+>   int customerId;
+>   char mediaType, movieType;
+>   std::string movieKey;
+40,42c41,43
+<     ss >> commandType >> customerId >> mediaType >> movieType;
+<     std::getline(ss, movieKey);
+<     movieKey.erase(0, movieKey.find_first_not_of(" "));
+---
+>   ss >> commandType >> customerId >> mediaType >> movieType;
+>   std::getline(ss, movieKey);
+>   movieKey.erase(0, movieKey.find_first_not_of(" "));
+44c45
+<     return new Borrow(customerId, mediaType, movieType, movieKey);
+---
+>   return new Borrow(customerId, mediaType, movieType, movieKey);
+Running clang-format on ./classic.cpp
+6c6,7
+< // Classic::Classic(const MovieData& data, const std::string& majorActor, int month)
+---
+> // Classic::Classic(const MovieData& data, const std::string& majorActor, int
+> // month)
+29c30,31
+< //         << movieData.title << ", " << majorActor << " " << month << " " << movieData.year;
+---
+> //         << movieData.title << ", " << majorActor << " " << month << " " <<
+> //         movieData.year;
+60c62,63
+< //     if (!director.empty() && director[0] == ' ') director = director.substr(1);
+---
+> //     if (!director.empty() && director[0] == ' ') director =
+> //     director.substr(1);
+68c71,72
+< //     if (majorActorFirst.empty() || majorActorLast.empty() || month <= 0 || year <= 0)
+---
+> //     if (majorActorFirst.empty() || majorActorLast.empty() || month <= 0 ||
+> //     year <= 0)
+Running clang-format on ./comedy.cpp
+2d1
+< #include <sstream>
+3a3
+> #include <sstream>
+5,7c5
+< Comedy::Comedy(const MovieData& data) {
+<     movieData = data;
+< }
+---
+> Comedy::Comedy(const MovieData &data) { movieData = data; }
+9,13c7,11
+< bool Comedy::operator<(const Movie& other) const {
+<     // Sort by title, then year
+<     if (movieData.title != other.movieData.title)
+<         return movieData.title < other.movieData.title;
+<     return movieData.year < other.movieData.year;
+---
+> bool Comedy::operator<(const Movie &other) const {
+>   // Sort by title, then year
+>   if (movieData.title != other.movieData.title)
+>     return movieData.title < other.movieData.title;
+>   return movieData.year < other.movieData.year;
+17,20c15,18
+<     std::ostringstream oss;
+<     oss << "F, " << movieData.stock << ", " << movieData.director << ", "
+<         << movieData.title << ", " << movieData.year;
+<     return oss.str();
+---
+>   std::ostringstream oss;
+>   oss << "F, " << movieData.stock << ", " << movieData.director << ", "
+>       << movieData.title << ", " << movieData.year;
+>   return oss.str();
+23,25c21
+< ComedyFactory::ComedyFactory() {
+<     registerType("F", this);
+< }
+---
+> ComedyFactory::ComedyFactory() { registerType("F", this); }
+27,60c23,63
+< Movie* ComedyFactory::makeMovie(const std::string& data) const {
+<     std::istringstream ss(data);
+<     char type;
+<     int stock;
+<     std::string director, title;
+<     int year;
+< 
+<     // Parse type
+<     ss >> type;
+<     if (type != 'F') return nullptr;
+<     if (ss.peek() == ',') ss.ignore();
+<     if (ss.peek() == ' ') ss.ignore();
+< 
+<     // Parse stock
+<     ss >> stock;
+<     if (ss.peek() == ',') ss.ignore();
+<     if (ss.peek() == ' ') ss.ignore();
+< 
+<     // Parse director
+<     std::getline(ss, director, ',');
+<     if (!director.empty() && director[0] == ' ') director = director.substr(1);
+< 
+<     // Parse title
+<     std::getline(ss, title, ',');
+<     if (!title.empty() && title[0] == ' ') title = title.substr(1);
+< 
+<     // Parse year
+<     ss >> year;
+< 
+<     Movie::MovieData md;
+<     md.stock = stock;
+<     md.director = director;
+<     md.title = title;
+<     md.year = year;
+---
+> Movie *ComedyFactory::makeMovie(const std::string &data) const {
+>   std::istringstream ss(data);
+>   char type;
+>   int stock;
+>   std::string director, title;
+>   int year;
+> 
+>   // Parse type
+>   ss >> type;
+>   if (type != 'F')
+>     return nullptr;
+>   if (ss.peek() == ',')
+>     ss.ignore();
+>   if (ss.peek() == ' ')
+>     ss.ignore();
+> 
+>   // Parse stock
+>   ss >> stock;
+>   if (ss.peek() == ',')
+>     ss.ignore();
+>   if (ss.peek() == ' ')
+>     ss.ignore();
+> 
+>   // Parse director
+>   std::getline(ss, director, ',');
+>   if (!director.empty() && director[0] == ' ')
+>     director = director.substr(1);
+> 
+>   // Parse title
+>   std::getline(ss, title, ',');
+>   if (!title.empty() && title[0] == ' ')
+>     title = title.substr(1);
+> 
+>   // Parse year
+>   ss >> year;
+> 
+>   Movie::MovieData md;
+>   md.stock = stock;
+>   md.director = director;
+>   md.title = title;
+>   md.year = year;
+62c65
+<     return new Comedy(md);
+---
+>   return new Comedy(md);
+Running clang-format on ./command.cpp
+2,3d1
+< #include <sstream>
+< #include <iostream>
+4a3,4
+> #include <iostream>
+> #include <sstream>
+8,11c8,11
+< inline std::string trim(const std::string& s) {
+<     auto start = s.find_first_not_of(" \t\r\n");
+<     auto end = s.find_last_not_of(" \t\r\n");
+<     return (start == std::string::npos) ? "" : s.substr(start, end - start + 1);
+---
+> inline std::string trim(const std::string &s) {
+>   auto start = s.find_first_not_of(" \t\r\n");
+>   auto end = s.find_last_not_of(" \t\r\n");
+>   return (start == std::string::npos) ? "" : s.substr(start, end - start + 1);
+14,16c14,16
+< std::map<std::string, CommandFactory*>& CommandFactory::getMap() {
+<     static std::map<std::string, CommandFactory*> factories;
+<     return factories;
+---
+> std::map<std::string, CommandFactory *> &CommandFactory::getMap() {
+>   static std::map<std::string, CommandFactory *> factories;
+>   return factories;
+19,20c19,21
+< void CommandFactory::registerType(const std::string& type, CommandFactory* factory) {
+<     getMap()[type] = factory;
+---
+> void CommandFactory::registerType(const std::string &type,
+>                                   CommandFactory *factory) {
+>   getMap()[type] = factory;
+23,33c24,35
+< Command* CommandFactory::create(const std::string& data) {
+<     std::istringstream ss(data);
+<     std::string commandType;
+<     ss >> commandType;
+<     commandType = trim(commandType);
+< 
+<     if (getMap().count(commandType) == 0) {
+<         std::cout << "Do not know how to create command: " << commandType << std::endl;
+<         return nullptr;
+<     }
+<     return getMap().at(commandType)->makeCommand(data);
+---
+> Command *CommandFactory::create(const std::string &data) {
+>   std::istringstream ss(data);
+>   std::string commandType;
+>   ss >> commandType;
+>   commandType = trim(commandType);
+> 
+>   if (getMap().count(commandType) == 0) {
+>     std::cout << "Do not know how to create command: " << commandType
+>               << std::endl;
+>     return nullptr;
+>   }
+>   return getMap().at(commandType)->makeCommand(data);
+Running clang-format on ./customer.cpp
+25,32c25,32
+< Customer* CustomerFactory::create(const std::string& line) {
+<     std::istringstream ss(line);
+<     int id;
+<     std::string last, first;
+<     if (!(ss >> id >> last >> first)) {
+<         return nullptr;
+<     }
+<     return new Customer(id, last, first);
+---
+> Customer *CustomerFactory::create(const std::string &line) {
+>   std::istringstream ss(line);
+>   int id;
+>   std::string last, first;
+>   if (!(ss >> id >> last >> first)) {
+>     return nullptr;
+>   }
+>   return new Customer(id, last, first);
+Running clang-format on ./customerTable.cpp
+Running clang-format on ./hashtable.cpp
+20c20
+< }
+---
+>     }
+31c31
+< }
+---
+>     }
+Running clang-format on ./history.cpp
+7c7
+< void History::execute(Inventory & inv, CustomerTable &manager) {
+---
+> void History::execute(Inventory &inv, CustomerTable &manager) {
+Running clang-format on ./inventorycommand.cpp
+4c4,5
+< void InventoryCommand::execute(Inventory &inventory, CustomerTable & /*manager*/) {
+---
+> void InventoryCommand::execute(Inventory &inventory,
+>                                CustomerTable & /*manager*/) {
+10c11,12
+< Command *InventoryCommandFactory::makeCommand(const std::string & /*data*/) const {
+---
+> Command *
+> InventoryCommandFactory::makeCommand(const std::string & /*data*/) const {
+Running clang-format on ./inventory.cpp
+4,6c4,5
+< 
+< void Inventory::addMovie(Movie* movie) {
+<     movies[movie->movieData.title] = movie;
+---
+> void Inventory::addMovie(Movie *movie) {
+>   movies[movie->movieData.title] = movie;
+9,11c8
+< void Inventory::removeMovie(const std::string& title) {
+<     movies.erase(title);
+< }
+---
+> void Inventory::removeMovie(const std::string &title) { movies.erase(title); }
+13,16c10,14
+< Movie* Inventory::searchMovie(const std::string& title) const {
+<     auto it = movies.find(title);
+<     if (it != movies.end()) return it->second;
+<     return nullptr;
+---
+> Movie *Inventory::searchMovie(const std::string &title) const {
+>   auto it = movies.find(title);
+>   if (it != movies.end())
+>     return it->second;
+>   return nullptr;
+20,22c18,20
+<     for (const auto& movie : movies) {
+<         std::cout << movie.second->print() << std::endl;
+<     }
+---
+>   for (const auto &movie : movies) {
+>     std::cout << movie.second->print() << std::endl;
+>   }
+26,28c24,26
+<     for (auto& movie : movies) {
+<         delete movie.second;
+<     }
+---
+>   for (auto &movie : movies) {
+>     delete movie.second;
+>   }
+Running clang-format on ./main.cpp
+54c54
+< void testMovie(){
+---
+> void testMovie() {
+56,57c56,57
+<     std::string line;
+<     std::vector<Movie*> movies;
+---
+>   std::string line;
+>   std::vector<Movie *> movies;
+59,65c59,64
+<     while (std::getline(infile, line)) {
+<         Movie* movie = MovieFactory::create(line);
+<         if (movie && movie->getType() == "F") { // Only add Comedy
+<             movies.push_back(movie);
+<         } else if (movie) {
+<             delete movie; // Clean up non-comedy movies
+<         }
+---
+>   while (std::getline(infile, line)) {
+>     Movie *movie = MovieFactory::create(line);
+>     if (movie && movie->getType() == "F") { // Only add Comedy
+>       movies.push_back(movie);
+>     } else if (movie) {
+>       delete movie; // Clean up non-comedy movies
+66a66
+>   }
+68,71c68,71
+<     std::cout << "All Comedy Movies:\n";
+<     for (const auto& m : movies) {
+<         std::cout << m->print() << std::endl;
+<     }
+---
+>   std::cout << "All Comedy Movies:\n";
+>   for (const auto &m : movies) {
+>     std::cout << m->print() << std::endl;
+>   }
+73,76c73,76
+<     // Clean up
+<     for (auto m : movies) {
+<         delete m;
+<     }
+---
+>   // Clean up
+>   for (auto m : movies) {
+>     delete m;
+>   }
+79d78
+< 
+81,82c80,81
+<   //Inventory inventory;
+<   //CustomerTable customers;
+---
+>   // Inventory inventory;
+>   // CustomerTable customers;
+84,86c83,85
+<   //loadInventory("data4movies.txt", inventory);
+<   //loadCustomers("data4customers.txt", customers);
+<   //loadCommand("data4commands.txt", inventory, customers);
+---
+>   // loadInventory("data4movies.txt", inventory);
+>   // loadCustomers("data4customers.txt", customers);
+>   // loadCommand("data4commands.txt", inventory, customers);
+Running clang-format on ./movie.cpp
+2,3d1
+< #include <sstream>
+< #include <iostream>
+4a3,4
+> #include <iostream>
+> #include <sstream>
+6,8c6,8
+< std::map<std::string, MovieFactory*>& MovieFactory::getMap() {
+<     static std::map<std::string, MovieFactory*> factories;
+<     return factories;
+---
+> std::map<std::string, MovieFactory *> &MovieFactory::getMap() {
+>   static std::map<std::string, MovieFactory *> factories;
+>   return factories;
+11,12c11,13
+< void MovieFactory::registerType(const std::string& type, MovieFactory* factory) {
+<     getMap()[type] = factory;
+---
+> void MovieFactory::registerType(const std::string &type,
+>                                 MovieFactory *factory) {
+>   getMap()[type] = factory;
+15,21c16,22
+< Movie* MovieFactory::create(const std::string& data) {
+<     std::istringstream ss(data);
+<     std::string movieType;
+<     std::getline(ss, movieType, ',');
+<     // Trim whitespace
+<     movieType.erase(0, movieType.find_first_not_of(" \t"));
+<     movieType.erase(movieType.find_last_not_of(" \t") + 1);
+---
+> Movie *MovieFactory::create(const std::string &data) {
+>   std::istringstream ss(data);
+>   std::string movieType;
+>   std::getline(ss, movieType, ',');
+>   // Trim whitespace
+>   movieType.erase(0, movieType.find_first_not_of(" \t"));
+>   movieType.erase(movieType.find_last_not_of(" \t") + 1);
+23,28c24,29
+<     if (getMap().count(movieType) == 0) {
+<         std::cout << "Do not know how to create movie: " << movieType << std::endl;
+<         return nullptr;
+<     }
+<     std::cout<< "Movie: " << data << " added " << std::endl;
+<     return getMap().at(movieType)->makeMovie(data);
+---
+>   if (getMap().count(movieType) == 0) {
+>     std::cout << "Do not know how to create movie: " << movieType << std::endl;
+>     return nullptr;
+>   }
+>   std::cout << "Movie: " << data << " added " << std::endl;
+>   return getMap().at(movieType)->makeMovie(data);
+Running clang-format on ./return.cpp
+25d24
+< 
+Running clang-format on ./store_test.cpp
+=====================================================
+5. If there are any memory leaks, it should be in the output below
+=====================================================
+=====================================================
+6. Using valgrind to check for memory leaks
+   Check for "definitely lost" in the output below
+=====================================================
+==1668915== Memcheck, a memory error detector
+==1668915== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==1668915== Using Valgrind-3.23.0 and LibVEX; rerun with -h for copyright info
+==1668915== Command: ./a.out
+==1668915== Parent PID: 1668662
+==1668915== 
+==1668915== 
+==1668915== HEAP SUMMARY:
+==1668915==     in use at exit: 0 bytes in 0 blocks
+==1668915==   total heap usage: 104 allocs, 104 frees, 102,718 bytes allocated
+==1668915== 
+==1668915== All heap blocks were freed -- no leaks are possible
+==1668915== 
+==1668915== For lists of detected and suppressed errors, rerun with: -s
+==1668915== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+Sun Jun  8 05:07:53 PM PDT 2025
+=====================================================
+To create an output.txt file with all the output from this script
+Run the below command
+      ./create-output.sh > output.txt 2>&1 
+=====================================================
