@@ -3,6 +3,7 @@
 class Return : public Command {
 private:
   int customerId;
+  std::string mediaType; 
   std::string movieType;
   std::string movieKey;
 

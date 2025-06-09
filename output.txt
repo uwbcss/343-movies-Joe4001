@@ -1,4 +1,4 @@
-Sun Jun  8 06:08:04 PM PDT 2025
+Sun Jun  8 06:23:04 PM PDT 2025
 Linux csslab6.uwb.edu 5.14.0-503.35.1.el9_5.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Apr 3 12:12:16 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
 uid=1325499(aguijos) gid=2121325499(aguijos) groups=2121325499(aguijos),605559(lab-access) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
 =====================================================
@@ -17,27 +17,27 @@ return.cpp:7:37: warning: unused parameter ‘mediaType’ [-Wunused-parameter]
 2. If the section below is empty or has the expected output 
     the program puns and produces correct output
 =====================================================
-Discarding invalid movie entry: C, 10, Michael Curtiz, Casablanca, Ingrid Bergman 8 1942
-Discarding invalid movie entry: C, 10, Michael Curtiz, Casablanca, Humphrey Bogart 8 1942
-Discarding invalid movie entry: C, 10, Victor Fleming, The Wizard of Oz, Judy Garland 7 1939
-Discarding invalid movie entry: C, 10, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
 Discarding invalid movie entry: Z, 10, Hal Ashby, Harold and Maude, Bud Cort 3 1971
-Discarding invalid movie entry: C, 10, George Cukor, Holiday, Katherine Hepburn 9 1938
-Discarding invalid movie entry: C, 10, George Cukor, Holiday, Cary Grant 9 1938
-Discarding invalid movie entry: C, 10, Victor Fleming, Gone With the Wind, Vivien Leigh 2 1939
-Discarding invalid movie entry: C, 10, Victor Fleming, Gone With the Wind, Clark Gable 2 1939
-Discarding invalid movie entry: C, 10, George Cukor, The Philadelphia Story, Katherine Hepburn 5 1940
-Discarding invalid movie entry: C, 10, George Cukor, The Philadelphia Story, Cary Grant 5 1940
-Discarding invalid movie entry: C, 10, John Huston, The Maltese Falcon, Humphrey Bogart 10 1941
 Discarding invalid movie entry: Z, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
-Discarding invalid movie entry: C, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
-Discarding invalid movie entry: C, 10, Frank Capra, It's a Wonderful Life, Donna Reed 11 1946
-Discarding invalid movie entry: C, 10, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell 2 1971
 Discarding invalid movie entry: 
 Discarding invalid movie entry: 
 Discarding invalid movie entry: 
 Discarding invalid movie entry: 
 Discarding invalid movie entry: 
+C, 10, John Huston, The Maltese Falcon, Humphrey Bogart 10 1941
+C, 10, Frank Capra, It's a Wonderful Life, Donna Reed 11 1946
+C, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+C, 10, Victor Fleming, Gone With the Wind, Clark Gable 2 1939
+C, 10, Victor Fleming, Gone With the Wind, Vivien Leigh 2 1939
+C, 10, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell 2 1971
+C, 10, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+C, 10, George Cukor, The Philadelphia Story, Cary Grant 5 1940
+C, 10, George Cukor, The Philadelphia Story, Katherine Hepburn 5 1940
+C, 10, Victor Fleming, The Wizard of Oz, Judy Garland 7 1939
+C, 10, Michael Curtiz, Casablanca, Humphrey Bogart 8 1942
+C, 10, Michael Curtiz, Casablanca, Ingrid Bergman 8 1942
+C, 10, George Cukor, Holiday, Cary Grant 9 1938
+C, 10, George Cukor, Holiday, Katherine Hepburn 9 1938
 F, 10, Woody Allen, Annie Hall, 1977
 D, 10, Barry Levinson, Good Morning Vietnam, 1988
 D, 10, Barry Levinson, Same Director Good Morning Vietnam, 1988
@@ -60,80 +60,28 @@ Transaction history for customer 5000:
 History for: Freddie Frog
 Transaction history for customer 8000:
 History for: Wally Wacky
-Executing Borrow Command for 0x10a35b8, Media Type: D, Movie Type: F, Movie Key: You've Got Mail, 1998
-Executing Borrow Command for 0x10a34e8, Media Type: D, Movie Type: D, Movie Key: Barry Levinson, Good Morning Vietnam
-Executing Borrow Command for 0x10a34e8, Media Type: D, Movie Type: C, Movie Key: 5 1940 Katherine Hepburn
-ERROR: Movie not found: 5 1940 Katherine Hepburn
-Executing Borrow Command for 0x10a3688, Media Type: D, Movie Type: F, Movie Key: Sleepless in Seattle, 1993
-Executing Borrow Command for 0x10a2fb8, Media Type: D, Movie Type: C, Movie Key: 2 1971 Malcolm McDowell
-ERROR: Movie not found: 2 1971 Malcolm McDowell
-Executing Borrow Command for 0x10a3620, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a2f48, Media Type: D, Movie Type: F, Movie Key: Annie Hall, 1977
-Executing Borrow Command for 0x10a3178, Media Type: D, Movie Type: C, Movie Key: 2 1971 Malcolm McDowell
-ERROR: Movie not found: 2 1971 Malcolm McDowell
-Executing Borrow Command for 0x10a3178, Media Type: D, Movie Type: Z, Movie Key: 2 1971 Malcolm McDowell
-ERROR: Movie not found: 2 1971 Malcolm McDowell
-Executing Borrow Command for 0x10a3620, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a34e8, Media Type: D, Movie Type: D, Movie Key: Gus Van Sant, Good Will Hunting
-Executing Borrow Command for 0x10a3688, Media Type: D, Movie Type: D, Movie Key: Phillippe De Broca, King of Hearts
-ERROR: Movie not found: 2 1971 Malcolm McDowell
-Executing Borrow Command for 0x10a34e8, Media Type: D, Movie Type: C, Movie Key: 5 1940 Cary Grant
-ERROR: Movie not found: 5 1940 Cary Grant
-Executing Borrow Command for 0x10a3178, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a34e8, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a2f48, Media Type: D, Movie Type: F, Movie Key: When Harry Met Sally, 1989
-Executing Borrow Command for 0x10a2f48, Media Type: D, Movie Type: D, Movie Key: Jonathan Demme, Silence of the Lambs
-Executing Borrow Command for 0x10a3028, Media Type: D, Movie Type: F, Movie Key: You've Got Mail, 1998
-Executing Borrow Command for 0x10a35b8, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a3178, Media Type: D, Movie Type: C, Movie Key: 10 1941 Humphrey Bogart
-ERROR: Movie not found: 10 1941 Humphrey Bogart
-Executing Borrow Command for 0x10a35b8, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
 Discarding invalid command: X
-Executing Borrow Command for 0x10a3178, Media Type: D, Movie Type: C, Movie Key: 9 1938 Cary Grant
-ERROR: Movie not found: 9 1938 Cary Grant
-Executing Borrow Command for 0x10a3620, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a2f48, Media Type: D, Movie Type: D, Movie Key: Nancy Savoca, Dogfight
-Executing Borrow Command for 0x10a3108, Media Type: D, Movie Type: D, Movie Key: Steven Spielberg, Schindler's List
-ERROR: Movie not found: 3 1971 Ruth Gordon
 Discarding invalid command: Z 1000 D C 10 1941 Humphrey Bogart
-Executing Borrow Command for 0x10a3620, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a35b8, Media Type: D, Movie Type: F, Movie Key: National Lampoon's Animal House, 1978
-Executing Borrow Command for 0x10a2f48, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a3108, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a3688, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a3688, Media Type: D, Movie Type: D, Movie Key: Nancy Savoca, Dogfight
-Executing Borrow Command for 0x10a3550, Media Type: D, Movie Type: D, Movie Key: Clint Eastwood, Unforgiven
-Executing Borrow Command for 0x10a3550, Media Type: D, Movie Type: F, Movie Key: Fargo, 1996
-Executing Borrow Command for 0, Media Type: D, Movie Type: C, Movie Key: 2 1971 Malcolm McDowell
 ERROR: Customer ID 1234 not found.
-Executing Borrow Command for 0x10a34e8, Media Type: D, Movie Type: F, Movie Key: Bogus Title, 2001
 ERROR: Movie not found: Bogus Title, 2001
-Executing Borrow Command for 0x10a34e8, Media Type: Z, Movie Type: F, Movie Key: Fargo, 1996
-Executing Borrow Command for 0x10a3688, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a3550, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a3550, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a2ed8, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a3108, Media Type: D, Movie Type: C, Movie Key: 3 1971 Ruth Gordon
-ERROR: Movie not found: 3 1971 Ruth Gordon
-Executing Borrow Command for 0x10a34e8, Media Type: D, Movie Type: D, Movie Key: Steven Spielberg, Bogus Title
+ERROR: Movie out of stock: 3 1971 Ruth Gordon
+ERROR: Movie out of stock: 3 1971 Ruth Gordon
+ERROR: Movie out of stock: 3 1971 Ruth Gordon
 ERROR: Movie not found: Steven Spielberg, Bogus Title
+C, 9, John Huston, The Maltese Falcon, Humphrey Bogart 10 1941
+C, 10, Frank Capra, It's a Wonderful Life, Donna Reed 11 1946
+C, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+C, 10, Victor Fleming, Gone With the Wind, Clark Gable 2 1939
+C, 10, Victor Fleming, Gone With the Wind, Vivien Leigh 2 1939
+C, 8, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell 2 1971
+C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+C, 9, George Cukor, The Philadelphia Story, Cary Grant 5 1940
+C, 9, George Cukor, The Philadelphia Story, Katherine Hepburn 5 1940
+C, 10, Victor Fleming, The Wizard of Oz, Judy Garland 7 1939
+C, 10, Michael Curtiz, Casablanca, Humphrey Bogart 8 1942
+C, 10, Michael Curtiz, Casablanca, Ingrid Bergman 8 1942
+C, 9, George Cukor, Holiday, Cary Grant 9 1938
+C, 10, George Cukor, Holiday, Katherine Hepburn 9 1938
 F, 9, Woody Allen, Annie Hall, 1977
 D, 9, Barry Levinson, Good Morning Vietnam, 1988
 D, 10, Barry Levinson, Same Director Good Morning Vietnam, 1988
@@ -153,16 +101,33 @@ F, 9, Nora Ephron, You've Got Mail, 1998
 Transaction history for customer 1000:
 History for: Minnie Mouse
  Borrowed: D, 9, Barry Levinson, Good Morning Vietnam, 1988
+ Borrowed: C, 9, George Cukor, The Philadelphia Story, Katherine Hepburn 5 1940
  Borrowed: D, 9, Gus Van Sant, Good Will Hunting, 2000
+ Borrowed: C, 9, George Cukor, The Philadelphia Story, Cary Grant 5 1940
+ Borrowed: C, 8, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
  Borrowed: F, 8, Joel Coen, Fargo, 1996
 Transaction history for customer 1111:
 History for: Mickey Mouse
+ Borrowed: C, 8, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell 2 1971
+ Borrowed: C, 7, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell 2 1971
+ Borrowed: C, 9, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Borrowed: C, 9, John Huston, The Maltese Falcon, Humphrey Bogart 10 1941
+ Borrowed: C, 9, George Cukor, Holiday, Cary Grant 9 1938
 Transaction history for customer 5000:
 History for: Freddie Frog
+ Borrowed: C, 9, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Returned: C, 10, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Borrowed: C, 9, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Returned: C, 10, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Borrowed: C, 5, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Returned: C, 6, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Borrowed: C, 5, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
 Transaction history for customer 8000:
 History for: Wally Wacky
  Borrowed: F, 9, Nora Ephron, You've Got Mail, 1998
  Returned: F, 10, Nora Ephron, You've Got Mail, 1998
+ Borrowed: C, 7, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Borrowed: C, 6, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
  Borrowed: F, 9, John Landis, National Lampoon's Animal House, 1978
 Transaction history for customer 8888:
 History for: Porky Pig
@@ -170,23 +135,7 @@ History for: Porky Pig
  Borrowed: F, 9, Rob Reiner, When Harry Met Sally, 1989
  Borrowed: D, 9, Jonathan Demme, Silence of the Lambs, 1991
  Borrowed: D, 9, Nancy Savoca, Dogfight, 1991
-==========================
-F, 9, Woody Allen, Annie Hall, 1977
-D, 9, Barry Levinson, Good Morning Vietnam, 1988
-D, 10, Barry Levinson, Same Director Good Morning Vietnam, 1988
-D, 9, Clint Eastwood, Unforgiven, 1992
-F, 8, Joel Coen, Fargo, 1996
-D, 9, Gus Van Sant, Good Will Hunting, 2000
-D, 9, Jonathan Demme, Silence of the Lambs, 1991
-D, 8, Nancy Savoca, Dogfight, 1991
-F, 9, John Landis, National Lampoon's Animal House, 1978
-D, 9, Phillippe De Broca, King of Hearts, 1967
-F, 10, Different Years, Pirates of the Caribbean, 2000
-F, 10, Gore Verbinski, Pirates of the Caribbean, 2003
-F, 9, Nora Ephron, Sleepless in Seattle, 1993
-D, 9, Steven Spielberg, Schindler's List, 1993
-F, 9, Rob Reiner, When Harry Met Sally, 1989
-F, 9, Nora Ephron, You've Got Mail, 1998
+ Borrowed: C, 4, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
 Done!
 =====================================================
 3. If the section below is empty, then there are no clang-tidy warnings 
@@ -195,33 +144,33 @@ Done!
 [1/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/borrow.cpp.
 18622 warnings generated.
 [2/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/classic.cpp.
-18622 warnings generated.
-[3/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/comedy.cpp.
 35655 warnings generated.
+[3/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/comedy.cpp.
+52688 warnings generated.
 [4/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/command.cpp.
-57664 warnings generated.
+74697 warnings generated.
 [5/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/customer.cpp.
-74506 warnings generated.
+91539 warnings generated.
 [6/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/customerTable.cpp.
-91062 warnings generated.
-[7/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/drama.cpp.
 108095 warnings generated.
+[7/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/drama.cpp.
+125128 warnings generated.
 [8/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/hashtable.cpp.
-128476 warnings generated.
+145509 warnings generated.
 [9/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/history.cpp.
-147092 warnings generated.
+164125 warnings generated.
 [10/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/inventorycommand.cpp.
-165429 warnings generated.
+182462 warnings generated.
 [11/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/inventory.cpp.
-182195 warnings generated.
+199228 warnings generated.
 [12/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/main.cpp.
-201322 warnings generated.
+218355 warnings generated.
 [13/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/movie.cpp.
-221737 warnings generated.
+238770 warnings generated.
 [14/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/return.cpp.
-240353 warnings generated.
+257386 warnings generated.
 [15/15] Processing file /home/NETID/aguijos/343-movies-Joe4001/store_test.cpp.
-258241 warnings generated.
+275274 warnings generated.
 /home/NETID/aguijos/343-movies-Joe4001/borrow.cpp:16:10: error: implicit conversion 'Customer *' -> 'bool' [readability-implicit-bool-conversion,-warnings-as-errors]
    16 |     if (!customer) {
       |         ~^       
@@ -245,6 +194,51 @@ Done!
 /home/NETID/aguijos/343-movies-Joe4001/borrow.cpp:48:5: note: did you mean this line to be inside this 'while'
    48 |     while (!movieKey.empty() && (movieKey.back() == ',' || movieKey.back() == ' '))
       |     ^
+/home/NETID/aguijos/343-movies-Joe4001/classic.cpp:2:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
+    2 | #include <sstream>
+      | ^        ~~~~~~~~~
+      |          <iostream>
+    3 | #include <iostream>
+      |          ~~~~~~~~~~
+      |          <sstream>
+/home/NETID/aguijos/343-movies-Joe4001/classic.cpp:11:48: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   11 |     if (movieData.year != other.movieData.year)
+      |                                                ^
+      |                                                 {
+   12 |         return movieData.year < other.movieData.year;
+      |                                                      
+/home/NETID/aguijos/343-movies-Joe4001/classic.cpp:13:59: error: statement should be inside braces [google-readability-braces-around-statements,readability-braces-around-statements,-warnings-as-errors]
+   13 |     if (month != static_cast<const Classic&>(other).month)
+      |                                                           ^
+      |                                                            {
+   14 |         return month < static_cast<const Classic&>(other).month;
+      |                                                                 
+/home/NETID/aguijos/343-movies-Joe4001/classic.cpp:37:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   37 |     std::string director, title, actorFirst, actorLast;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/NETID/aguijos/343-movies-Joe4001/classic.cpp:38:5: error: multiple declarations in a single statement reduces readability [readability-isolate-declaration,-warnings-as-errors]
+   38 |     int month, year;
+      |     ^~~~~~~~~~~~~~~~
+/home/NETID/aguijos/343-movies-Joe4001/classic.cpp:42:21: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   42 |     if (type != 'C') return nullptr;
+      |                     ^               
+      |                      {
+/home/NETID/aguijos/343-movies-Joe4001/classic.cpp:43:26: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   43 |     if (ss.peek() == ',') ss.ignore();
+      |                          ^            
+      |                           {
+/home/NETID/aguijos/343-movies-Joe4001/classic.cpp:44:29: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   44 |     while (ss.peek() == ' ') ss.ignore();
+      |                             ^            
+      |                              {
+/home/NETID/aguijos/343-movies-Joe4001/classic.cpp:48:26: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   48 |     if (ss.peek() == ',') ss.ignore();
+      |                          ^            
+      |                           {
+/home/NETID/aguijos/343-movies-Joe4001/classic.cpp:49:29: error: statement should be inside braces [readability-braces-around-statements,-warnings-as-errors]
+   49 |     while (ss.peek() == ' ') ss.ignore();
+      |                             ^            
+      |                              {
 /home/NETID/aguijos/343-movies-Joe4001/comedy.cpp:2:1: error: #includes are not sorted properly [llvm-include-order,-warnings-as-errors]
     2 | #include <sstream>
       | ^        ~~~~~~~~~
@@ -376,9 +370,9 @@ Done!
     5 | #include <map>
       |          ~~~~~
       |          <string>
-Suppressed 258193 warnings (258191 in non-user code, 2 with check filters).
+Suppressed 275213 warnings (275211 in non-user code, 2 with check filters).
 Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
-31 warnings treated as errors
+41 warnings treated as errors
 =====================================================
 4. If the section below is empty, clang-format does not find any formatting issues
    You can fix formatting errors using "clang-format -i <filename>" on command line
@@ -392,12 +386,12 @@ Running clang-format on ./borrow.cpp
 >                const std::string &movieKey)
 >     : customerId(customerId), mediaType(mediaType), movieType(movieType),
 >       movieKey(movieKey) {}
-10,30c12,33
+10,30c12,34
 < void Borrow::execute(Inventory& inventory, CustomerTable& customers) {
-<     std::cout << "Executing Borrow Command for " << customers.getCustomer(customerId)
-<               << ", Media Type: " << mediaType 
-<               << ", Movie Type: " << movieType 
-<               << ", Movie Key: " << movieKey << std::endl;
+<     // std::cout << "Executing Borrow Command for " << customers.getCustomer(customerId)
+<     //           << ", Media Type: " << mediaType 
+<     //           << ", Movie Type: " << movieType 
+<     //           << ", Movie Key: " << movieKey << std::endl;
 <     Customer* customer = customers.getCustomer(customerId);
 <     if (!customer) {
 <         std::cout << "ERROR: Customer ID " << customerId << " not found." << std::endl;
@@ -416,10 +410,11 @@ Running clang-format on ./borrow.cpp
 <     }
 ---
 > void Borrow::execute(Inventory &inventory, CustomerTable &customers) {
->   std::cout << "Executing Borrow Command for "
->             << customers.getCustomer(customerId)
->             << ", Media Type: " << mediaType << ", Movie Type: " << movieType
->             << ", Movie Key: " << movieKey << std::endl;
+>   // std::cout << "Executing Borrow Command for " <<
+>   // customers.getCustomer(customerId)
+>   //           << ", Media Type: " << mediaType
+>   //           << ", Movie Type: " << movieType
+>   //           << ", Movie Key: " << movieKey << std::endl;
 >   Customer *customer = customers.getCustomer(customerId);
 >   if (!customer) {
 >     std::cout << "ERROR: Customer ID " << customerId << " not found."
@@ -437,13 +432,13 @@ Running clang-format on ./borrow.cpp
 >   } else {
 >     std::cout << "ERROR: Movie out of stock: " << movieKey << std::endl;
 >   }
-33,35c36
+33,35c37
 < BorrowFactory::BorrowFactory() {
 <     registerType("B", this);
 < }
 ---
 > BorrowFactory::BorrowFactory() { registerType("B", this); }
-37,42c38,43
+37,42c39,44
 < Command* BorrowFactory::makeCommand(const std::string& data) const {
 <     std::istringstream ss(data);
 <     std::string commandType;
@@ -457,7 +452,7 @@ Running clang-format on ./borrow.cpp
 >   int customerId;
 >   char mediaType, movieType;
 >   std::string movieKey;
-44,48c45,50
+44,48c46,51
 <     ss >> commandType >> customerId >> mediaType >> movieType;
 <     std::getline(ss, movieKey);
 <     movieKey.erase(0, movieKey.find_first_not_of(" "));
@@ -470,31 +465,145 @@ Running clang-format on ./borrow.cpp
 >   //
 >   while (!movieKey.empty() &&
 >          (movieKey.back() == ',' || movieKey.back() == ' '))
-51c53
+51c54
 <     return new Borrow(customerId, mediaType, movieType, movieKey);
 ---
 >   return new Borrow(customerId, mediaType, movieType, movieKey);
 Running clang-format on ./classic.cpp
-6c6,7
-< // Classic::Classic(const MovieData& data, const std::string& majorActor, int month)
+2d1
+< #include <sstream>
+3a3
+> #include <sstream>
+5c5,6
+< Classic::Classic(const MovieData& data, int month, const std::string& majorActor)
 ---
-> // Classic::Classic(const MovieData& data, const std::string& majorActor, int
-> // month)
-29c30,31
-< //         << movieData.title << ", " << majorActor << " " << month << " " << movieData.year;
+> Classic::Classic(const MovieData &data, int month,
+>                  const std::string &majorActor)
+7c8
+<     movieData = data;
 ---
-> //         << movieData.title << ", " << majorActor << " " << month << " " <<
-> //         movieData.year;
-60c62,63
-< //     if (!director.empty() && director[0] == ' ') director = director.substr(1);
+>   movieData = data;
+10,15c11,16
+< bool Classic::operator<(const Movie& other) const {
+<     if (movieData.year != other.movieData.year)
+<         return movieData.year < other.movieData.year;
+<     if (month != static_cast<const Classic&>(other).month)
+<         return month < static_cast<const Classic&>(other).month;
+<     return majorActor < static_cast<const Classic&>(other).majorActor;
 ---
-> //     if (!director.empty() && director[0] == ' ') director =
-> //     director.substr(1);
-68c71,72
-< //     if (majorActorFirst.empty() || majorActorLast.empty() || month <= 0 || year <= 0)
+> bool Classic::operator<(const Movie &other) const {
+>   if (movieData.year != other.movieData.year)
+>     return movieData.year < other.movieData.year;
+>   if (month != static_cast<const Classic &>(other).month)
+>     return month < static_cast<const Classic &>(other).month;
+>   return majorActor < static_cast<const Classic &>(other).majorActor;
+19,22c20,24
+<     std::ostringstream oss;
+<     oss << "C, " << movieData.stock << ", " << movieData.director << ", "
+<         << movieData.title << ", " << majorActor << " " << month << " " << movieData.year;
+<     return oss.str();
 ---
-> //     if (majorActorFirst.empty() || majorActorLast.empty() || month <= 0 ||
-> //     year <= 0)
+>   std::ostringstream oss;
+>   oss << "C, " << movieData.stock << ", " << movieData.director << ", "
+>       << movieData.title << ", " << majorActor << " " << month << " "
+>       << movieData.year;
+>   return oss.str();
+26c28,29
+<     return std::to_string(month) + " " + std::to_string(movieData.year) + " " + majorActor;
+---
+>   return std::to_string(month) + " " + std::to_string(movieData.year) + " " +
+>          majorActor;
+29,31c32
+< ClassicFactory::ClassicFactory() {
+<     registerType("C", this);
+< }
+---
+> ClassicFactory::ClassicFactory() { registerType("C", this); }
+33,69c34,75
+< Movie* ClassicFactory::makeMovie(const std::string& data) const {
+<     std::istringstream ss(data);
+<     char type;
+<     int stock;
+<     std::string director, title, actorFirst, actorLast;
+<     int month, year;
+< 
+<     // Parse type
+<     ss >> type;
+<     if (type != 'C') return nullptr;
+<     if (ss.peek() == ',') ss.ignore();
+<     while (ss.peek() == ' ') ss.ignore();
+< 
+<     // Parse stock
+<     ss >> stock;
+<     if (ss.peek() == ',') ss.ignore();
+<     while (ss.peek() == ' ') ss.ignore();
+< 
+<     // Parse director
+<     std::getline(ss, director, ',');
+<     director.erase(0, director.find_first_not_of(" "));
+<     director.erase(director.find_last_not_of(" ") + 1);
+< 
+<     // Parse title
+<     std::getline(ss, title, ',');
+<     title.erase(0, title.find_first_not_of(" "));
+<     title.erase(title.find_last_not_of(" ") + 1);
+< 
+<     // Parse major actor, month, year
+<     ss >> actorFirst >> actorLast >> month >> year;
+<     std::string majorActor = actorFirst + " " + actorLast;
+< 
+<     Movie::MovieData md;
+<     md.stock = stock;
+<     md.director = director;
+<     md.title = title;
+<     md.year = year;
+---
+> Movie *ClassicFactory::makeMovie(const std::string &data) const {
+>   std::istringstream ss(data);
+>   char type;
+>   int stock;
+>   std::string director, title, actorFirst, actorLast;
+>   int month, year;
+> 
+>   // Parse type
+>   ss >> type;
+>   if (type != 'C')
+>     return nullptr;
+>   if (ss.peek() == ',')
+>     ss.ignore();
+>   while (ss.peek() == ' ')
+>     ss.ignore();
+> 
+>   // Parse stock
+>   ss >> stock;
+>   if (ss.peek() == ',')
+>     ss.ignore();
+>   while (ss.peek() == ' ')
+>     ss.ignore();
+> 
+>   // Parse director
+>   std::getline(ss, director, ',');
+>   director.erase(0, director.find_first_not_of(" "));
+>   director.erase(director.find_last_not_of(" ") + 1);
+> 
+>   // Parse title
+>   std::getline(ss, title, ',');
+>   title.erase(0, title.find_first_not_of(" "));
+>   title.erase(title.find_last_not_of(" ") + 1);
+> 
+>   // Parse major actor, month, year
+>   ss >> actorFirst >> actorLast >> month >> year;
+>   std::string majorActor = actorFirst + " " + actorLast;
+> 
+>   Movie::MovieData md;
+>   md.stock = stock;
+>   md.director = director;
+>   md.title = title;
+>   md.year = year;
+71c77
+<     return new Classic(md, month, majorActor);
+---
+>   return new Classic(md, month, majorActor);
 Running clang-format on ./comedy.cpp
 2d1
 < #include <sstream>
@@ -944,35 +1053,20 @@ Running clang-format on ./main.cpp
 >       std::cout << "Discarding invalid command: " << line << std::endl;
 50a51
 >   }
-54,55c55,56
-<     std::cout << "==========================" << std::endl;
-<     inventory.printInventory();
----
->   std::cout << "==========================" << std::endl;
->   inventory.printInventory();
-59,60c60,61
+54,60c55,61
 <     Inventory inventory;
 <     CustomerTable customers;
----
->   Inventory inventory;
->   CustomerTable customers;
-62,64c63,65
 <     loadInventory("data4movies.txt", inventory);
 <     loadCustomers("data4customers.txt", customers);
 <     executeCommands("data4commands.txt", inventory, customers);
----
->   loadInventory("data4movies.txt", inventory);
->   loadCustomers("data4customers.txt", customers);
->   executeCommands("data4commands.txt", inventory, customers);
-66c67
-<     printAllMovies(inventory);
----
->   printAllMovies(inventory);
-68,70c69,70
-< 
 <     std::cout << "Done!" << std::endl;
 <     return 0;
 ---
+>   Inventory inventory;
+>   CustomerTable customers;
+>   loadInventory("data4movies.txt", inventory);
+>   loadCustomers("data4customers.txt", customers);
+>   executeCommands("data4commands.txt", inventory, customers);
 >   std::cout << "Done!" << std::endl;
 >   return 0;
 Running clang-format on ./movie.cpp
@@ -1037,22 +1131,22 @@ Running clang-format on ./store_test.cpp
 6. Using valgrind to check for memory leaks
    Check for "definitely lost" in the output below
 =====================================================
-==1676086== Memcheck, a memory error detector
-==1676086== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
-==1676086== Using Valgrind-3.23.0 and LibVEX; rerun with -h for copyright info
-==1676086== Command: ./a.out
-==1676086== Parent PID: 1675813
-==1676086== 
-==1676086== 
-==1676086== HEAP SUMMARY:
-==1676086==     in use at exit: 0 bytes in 0 blocks
-==1676086==   total heap usage: 638 allocs, 638 frees, 165,113 bytes allocated
-==1676086== 
-==1676086== All heap blocks were freed -- no leaks are possible
-==1676086== 
-==1676086== For lists of detected and suppressed errors, rerun with: -s
-==1676086== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-Sun Jun  8 06:09:00 PM PDT 2025
+==1677518== Memcheck, a memory error detector
+==1677518== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==1677518== Using Valgrind-3.23.0 and LibVEX; rerun with -h for copyright info
+==1677518== Command: ./a.out
+==1677518== Parent PID: 1677242
+==1677518== 
+==1677518== 
+==1677518== HEAP SUMMARY:
+==1677518==     in use at exit: 0 bytes in 0 blocks
+==1677518==   total heap usage: 867 allocs, 867 frees, 197,759 bytes allocated
+==1677518== 
+==1677518== All heap blocks were freed -- no leaks are possible
+==1677518== 
+==1677518== For lists of detected and suppressed errors, rerun with: -s
+==1677518== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+Sun Jun  8 06:24:00 PM PDT 2025
 =====================================================
 To create an output.txt file with all the output from this script
 Run the below command

@@ -8,10 +8,10 @@ Borrow::Borrow(int customerId, char mediaType, char movieType, const std::string
     : customerId(customerId), mediaType(mediaType), movieType(movieType), movieKey(movieKey) {}
 
 void Borrow::execute(Inventory& inventory, CustomerTable& customers) {
-    std::cout << "Executing Borrow Command for " << customers.getCustomer(customerId)
-              << ", Media Type: " << mediaType 
-              << ", Movie Type: " << movieType 
-              << ", Movie Key: " << movieKey << std::endl;
+    // std::cout << "Executing Borrow Command for " << customers.getCustomer(customerId)
+    //           << ", Media Type: " << mediaType 
+    //           << ", Movie Type: " << movieType 
+    //           << ", Movie Key: " << movieKey << std::endl;
     Customer* customer = customers.getCustomer(customerId);
     if (!customer) {
         std::cout << "ERROR: Customer ID " << customerId << " not found." << std::endl;

@@ -4,14 +4,14 @@
 
 History::History(int customerId) : customerId(customerId) {}
 
-void History::execute(Inventory & inv, CustomerTable &manager) {
+void History::execute(Inventory & , CustomerTable &manager) {
   Customer *customer = manager.getCustomer(customerId);
   if (customer == nullptr) {
     std::cout << "ERROR: Customer ID " << customerId << " not found."
               << std::endl;
     return;
   }
-  std::cout << "Transaction history for customer " << customerId << ":\n";
+  //std::cout << "Transaction history for customer " << customerId << ":\n";
   customer->printHistory();
 }
 

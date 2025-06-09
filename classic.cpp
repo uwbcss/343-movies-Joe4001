@@ -1,86 +1,75 @@
-// #include "classic.h"
-// #include <sstream>
-// #include <iostream>
-// #include <algorithm>
+#include "classic.h"
+#include <sstream>
+#include <iostream>
 
-// Classic::Classic(const MovieData& data, const std::string& majorActor, int month)
-// {
-//     movieData = data;
-//     this->majorActor = majorActor;
-//     this->month = month;
-// }
+Classic::Classic(const MovieData& data, int month, const std::string& majorActor)
+    : month(month), majorActor(majorActor) {
+    movieData = data;
+}
 
-// // Only use month and majorActor for comparison
-// bool Classic::operator<(const Movie& other) const {
-//     if (getType() != other.getType()) return getType() < other.getType();
-//     const Classic* o = dynamic_cast<const Classic*>(&other);
-//     if (!o) return false;
-//     if (movieData.year != o->movieData.year)
-//         return movieData.year < o->movieData.year;
-//     if (month != o->month)
-//         return month < o->month;
-//     return majorActor < o->majorActor;
-// }
+bool Classic::operator<(const Movie& other) const {
+    if (movieData.year != other.movieData.year)
+        return movieData.year < other.movieData.year;
+    if (month != static_cast<const Classic&>(other).month)
+        return month < static_cast<const Classic&>(other).month;
+    return majorActor < static_cast<const Classic&>(other).majorActor;
+}
 
-// // Only use month and majorActor for printing
-// std::string Classic::print() const {
-//     std::ostringstream oss;
-//     oss << "C, " << movieData.stock << ", " << movieData.director << ", "
-//         << movieData.title << ", " << majorActor << " " << month << " " << movieData.year;
-//     return oss.str();
-// }
+std::string Classic::print() const {
+    std::ostringstream oss;
+    oss << "C, " << movieData.stock << ", " << movieData.director << ", "
+        << movieData.title << ", " << majorActor << " " << month << " " << movieData.year;
+    return oss.str();
+}
 
-// // Factory registration
-// ClassicFactory::ClassicFactory() {
-//     registerType("C", this);
-// }
+std::string Classic::getKey() const {
+    return std::to_string(month) + " " + std::to_string(movieData.year) + " " + majorActor;
+}
 
-// // Parse: C, 10, George Cukor, Holiday, Katherine Hepburn 9 1938
-// Movie* ClassicFactory::makeMovie(const std::string& data) const {
-//     std::istringstream ss(data);
-//     char type;
-//     int stock;
-//     std::string director, title, majorActorFirst, majorActorLast;
-//     int month, year;
+ClassicFactory::ClassicFactory() {
+    registerType("C", this);
+}
 
-//     // Parse type
-//     ss >> type;
-//     if (type != 'C')
-//         return nullptr;
-//     if (ss.peek() == ',') ss.ignore();
-//     if (ss.peek() == ' ') ss.ignore();
+Movie* ClassicFactory::makeMovie(const std::string& data) const {
+    std::istringstream ss(data);
+    char type;
+    int stock;
+    std::string director, title, actorFirst, actorLast;
+    int month, year;
 
-//     // Parse stock
-//     ss >> stock;
-//     if (ss.peek() == ',') ss.ignore();
-//     if (ss.peek() == ' ') ss.ignore();
+    // Parse type
+    ss >> type;
+    if (type != 'C') return nullptr;
+    if (ss.peek() == ',') ss.ignore();
+    while (ss.peek() == ' ') ss.ignore();
 
-//     // Parse director
-//     std::getline(ss, director, ',');
-//     if (!director.empty() && director[0] == ' ') director = director.substr(1);
+    // Parse stock
+    ss >> stock;
+    if (ss.peek() == ',') ss.ignore();
+    while (ss.peek() == ' ') ss.ignore();
 
-//     // Parse title
-//     std::getline(ss, title, ',');
-//     if (!title.empty() && title[0] == ' ') title = title.substr(1);
+    // Parse director
+    std::getline(ss, director, ',');
+    director.erase(0, director.find_first_not_of(" "));
+    director.erase(director.find_last_not_of(" ") + 1);
 
-//     // Now the rest: major actor (first and last), month, year
-//     ss >> majorActorFirst >> majorActorLast >> month >> year;
-//     if (majorActorFirst.empty() || majorActorLast.empty() || month <= 0 || year <= 0)
-//         return nullptr;
+    // Parse title
+    std::getline(ss, title, ',');
+    title.erase(0, title.find_first_not_of(" "));
+    title.erase(title.find_last_not_of(" ") + 1);
 
-//     Movie::MovieData md;
-//     md.stock = stock;
-//     md.director = director;
-//     md.title = title;
-//     md.year = year;
+    // Parse major actor, month, year
+    ss >> actorFirst >> actorLast >> month >> year;
+    std::string majorActor = actorFirst + " " + actorLast;
 
-//     return new Classic(md, majorActorFirst + " " + majorActorLast, month);
-// }
+    Movie::MovieData md;
+    md.stock = stock;
+    md.director = director;
+    md.title = title;
+    md.year = year;
 
-// Movie* ClassicFactory::makeMovie(const Movie::MovieData& data) const {
-//     // You can return nullptr or throw, since you only use the string version
-//     return nullptr;
-// }
+    return new Classic(md, month, majorActor);
+}
 
-// // Static instance for self-registration
-// static ClassicFactory globalClassicFactory;
+// Static registration
+static ClassicFactory globalClassicFactory;

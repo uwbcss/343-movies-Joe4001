@@ -6,7 +6,7 @@
 
 Return::Return(int customerId, char mediaType, char movieType,
                const std::string &movieKey)
-    : customerId(customerId), movieType(1, movieType), movieKey(movieKey) {}
+    : customerId(customerId), mediaType(1, mediaType), movieType(1, movieType), movieKey(movieKey) {}
 
 void Return::execute(Inventory &inventory, CustomerTable &manager) {
   Customer *customer = manager.getCustomer(customerId);

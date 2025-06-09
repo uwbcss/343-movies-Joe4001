@@ -50,22 +50,12 @@ void executeCommands(const std::string &filename, Inventory &inventory, Customer
     }
 }
 
-void printAllMovies(const Inventory &inventory) {
-    std::cout << "==========================" << std::endl;
-    inventory.printInventory();
-}
-
 int main() {
     Inventory inventory;
     CustomerTable customers;
-
     loadInventory("data4movies.txt", inventory);
     loadCustomers("data4customers.txt", customers);
     executeCommands("data4commands.txt", inventory, customers);
-
-    printAllMovies(inventory);
-
-
     std::cout << "Done!" << std::endl;
     return 0;
 }

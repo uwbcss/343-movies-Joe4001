@@ -1,0 +1,107 @@
+Discarding invalid movie entry: F, 10, Nora Ephron, Sleepless in Seattle, 1993
+Discarding invalid movie entry: F, 10, Woody Allen, Annie Hall, 1977
+Discarding invalid movie entry: F, 10, Rob Reiner, When Harry Met Sally, 1989
+Discarding invalid movie entry: F, 10, Gore Verbinski, Pirates of the Caribbean, 2003
+Discarding invalid movie entry: F, 10, Different Years, Pirates of the Caribbean, 2000
+Discarding invalid movie entry: F, 10, Joel Coen, Fargo, 1996
+Discarding invalid movie entry: Z, 10, Hal Ashby, Harold and Maude, Bud Cort 3 1971
+Discarding invalid movie entry: Z, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+Discarding invalid movie entry: F, 10, John Landis, National Lampoon's Animal House, 1978
+Discarding invalid movie entry: F, 10, Nora Ephron, You've Got Mail, 1998
+Discarding invalid movie entry: 
+Discarding invalid movie entry: 
+Discarding invalid movie entry: 
+Discarding invalid movie entry: 
+Discarding invalid movie entry: 
+C, 10, John Huston, The Maltese Falcon, Humphrey Bogart 10 1941
+C, 10, Frank Capra, It's a Wonderful Life, Donna Reed 11 1946
+C, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+C, 10, Victor Fleming, Gone With the Wind, Clark Gable 2 1939
+C, 10, Victor Fleming, Gone With the Wind, Vivien Leigh 2 1939
+C, 10, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell 2 1971
+C, 10, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+C, 10, George Cukor, The Philadelphia Story, Cary Grant 5 1940
+C, 10, George Cukor, The Philadelphia Story, Katherine Hepburn 5 1940
+C, 10, Victor Fleming, The Wizard of Oz, Judy Garland 7 1939
+C, 10, Michael Curtiz, Casablanca, Humphrey Bogart 8 1942
+C, 10, Michael Curtiz, Casablanca, Ingrid Bergman 8 1942
+C, 10, George Cukor, Holiday, Cary Grant 9 1938
+C, 10, George Cukor, Holiday, Katherine Hepburn 9 1938
+D, 10, Barry Levinson, Good Morning Vietnam, 1988
+D, 10, Barry Levinson, Same Director Good Morning Vietnam, 1988
+D, 10, Clint Eastwood, Unforgiven, 1992
+D, 10, Gus Van Sant, Good Will Hunting, 2000
+D, 10, Jonathan Demme, Silence of the Lambs, 1991
+D, 10, Nancy Savoca, Dogfight, 1991
+D, 10, Phillippe De Broca, King of Hearts, 1967
+D, 10, Steven Spielberg, Schindler's List, 1993
+History for: Minnie Mouse
+History for: Freddie Frog
+History for: Wally Wacky
+ERROR: Movie not found: You've Got Mail, 1998
+ERROR: Movie not found: Sleepless in Seattle, 1993
+ERROR: Movie not found: Annie Hall, 1977
+ERROR: Movie not found: When Harry Met Sally, 1989
+ERROR: Movie not found: You've Got Mail, 1998
+ERROR: Movie not found: You've Got Mail, 1998
+Discarding invalid command: X
+Discarding invalid command: Z 1000 D C 10 1941 Humphrey Bogart
+ERROR: Movie not found: National Lampoon's Animal House, 1978
+ERROR: Movie not found: Fargo, 1996
+ERROR: Customer ID 1234 not found.
+ERROR: Movie not found: Bogus Title, 2001
+ERROR: Movie not found: Fargo, 1996
+ERROR: Movie out of stock: 3 1971 Ruth Gordon
+ERROR: Movie out of stock: 3 1971 Ruth Gordon
+ERROR: Movie out of stock: 3 1971 Ruth Gordon
+ERROR: Movie not found: Steven Spielberg, Bogus Title
+C, 9, John Huston, The Maltese Falcon, Humphrey Bogart 10 1941
+C, 10, Frank Capra, It's a Wonderful Life, Donna Reed 11 1946
+C, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+C, 10, Victor Fleming, Gone With the Wind, Clark Gable 2 1939
+C, 10, Victor Fleming, Gone With the Wind, Vivien Leigh 2 1939
+C, 8, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell 2 1971
+C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+C, 9, George Cukor, The Philadelphia Story, Cary Grant 5 1940
+C, 9, George Cukor, The Philadelphia Story, Katherine Hepburn 5 1940
+C, 10, Victor Fleming, The Wizard of Oz, Judy Garland 7 1939
+C, 10, Michael Curtiz, Casablanca, Humphrey Bogart 8 1942
+C, 10, Michael Curtiz, Casablanca, Ingrid Bergman 8 1942
+C, 9, George Cukor, Holiday, Cary Grant 9 1938
+C, 10, George Cukor, Holiday, Katherine Hepburn 9 1938
+D, 9, Barry Levinson, Good Morning Vietnam, 1988
+D, 10, Barry Levinson, Same Director Good Morning Vietnam, 1988
+D, 9, Clint Eastwood, Unforgiven, 1992
+D, 9, Gus Van Sant, Good Will Hunting, 2000
+D, 9, Jonathan Demme, Silence of the Lambs, 1991
+D, 8, Nancy Savoca, Dogfight, 1991
+D, 9, Phillippe De Broca, King of Hearts, 1967
+D, 9, Steven Spielberg, Schindler's List, 1993
+History for: Minnie Mouse
+ Borrowed: D, 9, Barry Levinson, Good Morning Vietnam, 1988
+ Borrowed: C, 9, George Cukor, The Philadelphia Story, Katherine Hepburn 5 1940
+ Borrowed: D, 9, Gus Van Sant, Good Will Hunting, 2000
+ Borrowed: C, 9, George Cukor, The Philadelphia Story, Cary Grant 5 1940
+ Borrowed: C, 8, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+History for: Mickey Mouse
+ Borrowed: C, 8, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell 2 1971
+ Borrowed: C, 7, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell 2 1971
+ Borrowed: C, 9, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Borrowed: C, 9, John Huston, The Maltese Falcon, Humphrey Bogart 10 1941
+ Borrowed: C, 9, George Cukor, Holiday, Cary Grant 9 1938
+History for: Freddie Frog
+ Borrowed: C, 9, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Returned: C, 10, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Borrowed: C, 9, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Returned: C, 10, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Borrowed: C, 5, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Returned: C, 6, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Borrowed: C, 5, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+History for: Wally Wacky
+ Borrowed: C, 7, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ Borrowed: C, 6, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+History for: Porky Pig
+ Borrowed: D, 9, Jonathan Demme, Silence of the Lambs, 1991
+ Borrowed: D, 9, Nancy Savoca, Dogfight, 1991
+ Borrowed: C, 4, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+Done!
