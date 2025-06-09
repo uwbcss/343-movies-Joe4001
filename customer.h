@@ -26,7 +26,7 @@ public:
 
 class CustomerFactory {
 public:
-    static Customer* create(const std::string& line);
+  static Customer *create(const std::string &line);
 };
 
 #endif

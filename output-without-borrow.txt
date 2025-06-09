@@ -1,16 +1,8 @@
 Start testStore1
 End testStore1
 Start testStore2
-Discarding invalid movie entry: F, 10, Nora Ephron, Sleepless in Seattle, 1993
-Discarding invalid movie entry: F, 10, Woody Allen, Annie Hall, 1977
-Discarding invalid movie entry: F, 10, Rob Reiner, When Harry Met Sally, 1989
-Discarding invalid movie entry: F, 10, Gore Verbinski, Pirates of the Caribbean, 2003
-Discarding invalid movie entry: F, 10, Different Years, Pirates of the Caribbean, 2000
-Discarding invalid movie entry: F, 10, Joel Coen, Fargo, 1996
 Discarding invalid movie entry: Z, 10, Hal Ashby, Harold and Maude, Bud Cort 3 1971
 Discarding invalid movie entry: Z, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
-Discarding invalid movie entry: F, 10, John Landis, National Lampoon's Animal House, 1978
-Discarding invalid movie entry: F, 10, Nora Ephron, You've Got Mail, 1998
 The Maltese Falcon, John Huston, 1941 Humphrey Bogart, October, (10) - Classic
 It's a Wonderful Life, Frank Capra, 1946 Donna Reed, November, (10) - Classic
 It's a Wonderful Life, Frank Capra, 1946 James Steward, November, (10) - Classic
@@ -25,22 +17,29 @@ Casablanca, Michael Curtiz, 1942 Humphrey Bogart, August, (10) - Classic
 Casablanca, Michael Curtiz, 1942 Ingrid Bergman, August, (10) - Classic
 Holiday, George Cukor, 1938 Cary Grant, September, (10) - Classic
 Holiday, George Cukor, 1938 Katherine Hepburn, September, (10) - Classic
+Annie Hall, Woody Allen, 1977 (10) - Comedy
 Good Morning Vietnam, Barry Levinson, 1988 (10) - Drama
 Same Director Good Morning Vietnam, Barry Levinson, 1988 (10) - Drama
 Unforgiven, Clint Eastwood, 1992 (10) - Drama
+Fargo, Joel Coen, 1996 (10) - Comedy
 Good Will Hunting, Gus Van Sant, 2000 (10) - Drama
 Silence of the Lambs, Jonathan Demme, 1991 (10) - Drama
 Dogfight, Nancy Savoca, 1991 (10) - Drama
+National Lampoon's Animal House, John Landis, 1978 (10) - Comedy
 King of Hearts, Phillippe De Broca, 1967 (10) - Drama
+Pirates of the Caribbean, Different Years, 2000 (10) - Comedy
+Pirates of the Caribbean, Gore Verbinski, 2003 (10) - Comedy
+Sleepless in Seattle, Nora Ephron, 1993 (10) - Comedy
 Schindler's List, Steven Spielberg, 1993 (10) - Drama
+When Harry Met Sally, Rob Reiner, 1989 (10) - Comedy
+You've Got Mail, Nora Ephron, 1998 (10) - Comedy
 History for: Princess Bubblegum
 ==================
   No transactions
 History for: Human Finn
 ==================
   No transactions
-ERROR: Movie not found: You've Got Mail, 1998
-ERROR: Movie not found: You've Got Mail, 1998
+Discarding invalid command: B 1000 D F You've Got Mail, 1998
 The Maltese Falcon, John Huston, 1941 Humphrey Bogart, October, (10) - Classic
 It's a Wonderful Life, Frank Capra, 1946 Donna Reed, November, (10) - Classic
 It's a Wonderful Life, Frank Capra, 1946 James Steward, November, (10) - Classic
@@ -55,21 +54,31 @@ Casablanca, Michael Curtiz, 1942 Humphrey Bogart, August, (10) - Classic
 Casablanca, Michael Curtiz, 1942 Ingrid Bergman, August, (10) - Classic
 Holiday, George Cukor, 1938 Cary Grant, September, (10) - Classic
 Holiday, George Cukor, 1938 Katherine Hepburn, September, (10) - Classic
+Annie Hall, Woody Allen, 1977 (10) - Comedy
 Good Morning Vietnam, Barry Levinson, 1988 (10) - Drama
 Same Director Good Morning Vietnam, Barry Levinson, 1988 (10) - Drama
 Unforgiven, Clint Eastwood, 1992 (10) - Drama
+Fargo, Joel Coen, 1996 (10) - Comedy
 Good Will Hunting, Gus Van Sant, 2000 (10) - Drama
 Silence of the Lambs, Jonathan Demme, 1991 (10) - Drama
 Dogfight, Nancy Savoca, 1991 (10) - Drama
+National Lampoon's Animal House, John Landis, 1978 (10) - Comedy
 King of Hearts, Phillippe De Broca, 1967 (10) - Drama
+Pirates of the Caribbean, Different Years, 2000 (10) - Comedy
+Pirates of the Caribbean, Gore Verbinski, 2003 (10) - Comedy
+Sleepless in Seattle, Nora Ephron, 1993 (10) - Comedy
 Schindler's List, Steven Spielberg, 1993 (10) - Drama
+When Harry Met Sally, Rob Reiner, 1989 (10) - Comedy
+You've Got Mail, Nora Ephron, 1998 (11) - Comedy
+Discarding invalid command: B 1002 D D Steven Spielberg, Schindler's List
+Discarding invalid command: B 1003 D C 3 1971 Ruth Gordon
 The Maltese Falcon, John Huston, 1941 Humphrey Bogart, October, (10) - Classic
 It's a Wonderful Life, Frank Capra, 1946 Donna Reed, November, (10) - Classic
 It's a Wonderful Life, Frank Capra, 1946 James Steward, November, (10) - Classic
 Gone With the Wind, Victor Fleming, 1939 Clark Gable, February, (10) - Classic
 Gone With the Wind, Victor Fleming, 1939 Vivien Leigh, February, (10) - Classic
 A Clockwork Orange, Stanley Kubrick, 1971 Malcolm McDowell, February, (10) - Classic
-Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (9) - Classic
+Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (10) - Classic
 The Philadelphia Story, George Cukor, 1940 Cary Grant, May, (10) - Classic
 The Philadelphia Story, George Cukor, 1940 Katherine Hepburn, May, (10) - Classic
 The Wizard of Oz, Victor Fleming, 1939 Judy Garland, July, (10) - Classic
@@ -77,29 +86,29 @@ Casablanca, Michael Curtiz, 1942 Humphrey Bogart, August, (10) - Classic
 Casablanca, Michael Curtiz, 1942 Ingrid Bergman, August, (10) - Classic
 Holiday, George Cukor, 1938 Cary Grant, September, (10) - Classic
 Holiday, George Cukor, 1938 Katherine Hepburn, September, (10) - Classic
+Annie Hall, Woody Allen, 1977 (10) - Comedy
 Good Morning Vietnam, Barry Levinson, 1988 (10) - Drama
 Same Director Good Morning Vietnam, Barry Levinson, 1988 (10) - Drama
 Unforgiven, Clint Eastwood, 1992 (10) - Drama
+Fargo, Joel Coen, 1996 (10) - Comedy
 Good Will Hunting, Gus Van Sant, 2000 (10) - Drama
 Silence of the Lambs, Jonathan Demme, 1991 (10) - Drama
 Dogfight, Nancy Savoca, 1991 (10) - Drama
+National Lampoon's Animal House, John Landis, 1978 (10) - Comedy
 King of Hearts, Phillippe De Broca, 1967 (10) - Drama
-Schindler's List, Steven Spielberg, 1993 (9) - Drama
+Pirates of the Caribbean, Different Years, 2000 (10) - Comedy
+Pirates of the Caribbean, Gore Verbinski, 2003 (10) - Comedy
+Sleepless in Seattle, Nora Ephron, 1993 (10) - Comedy
+Schindler's List, Steven Spielberg, 1993 (10) - Drama
+When Harry Met Sally, Rob Reiner, 1989 (10) - Comedy
+You've Got Mail, Nora Ephron, 1998 (11) - Comedy
 History for: Vampire Marceline
 ==================
- Borrowed: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (9) - Classic
+  No transactions
 End testStore2
 Start testStoreFinal
-Discarding invalid movie entry: F, 10, Nora Ephron, Sleepless in Seattle, 1993
-Discarding invalid movie entry: F, 10, Woody Allen, Annie Hall, 1977
-Discarding invalid movie entry: F, 10, Rob Reiner, When Harry Met Sally, 1989
-Discarding invalid movie entry: F, 10, Gore Verbinski, Pirates of the Caribbean, 2003
-Discarding invalid movie entry: F, 10, Different Years, Pirates of the Caribbean, 2000
-Discarding invalid movie entry: F, 10, Joel Coen, Fargo, 1996
 Discarding invalid movie entry: Z, 10, Hal Ashby, Harold and Maude, Bud Cort 3 1971
 Discarding invalid movie entry: Z, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
-Discarding invalid movie entry: F, 10, John Landis, National Lampoon's Animal House, 1978
-Discarding invalid movie entry: F, 10, Nora Ephron, You've Got Mail, 1998
 The Maltese Falcon, John Huston, 1941 Humphrey Bogart, October, (10) - Classic
 It's a Wonderful Life, Frank Capra, 1946 Donna Reed, November, (10) - Classic
 It's a Wonderful Life, Frank Capra, 1946 James Steward, November, (10) - Classic
@@ -114,14 +123,22 @@ Casablanca, Michael Curtiz, 1942 Humphrey Bogart, August, (10) - Classic
 Casablanca, Michael Curtiz, 1942 Ingrid Bergman, August, (10) - Classic
 Holiday, George Cukor, 1938 Cary Grant, September, (10) - Classic
 Holiday, George Cukor, 1938 Katherine Hepburn, September, (10) - Classic
+Annie Hall, Woody Allen, 1977 (10) - Comedy
 Good Morning Vietnam, Barry Levinson, 1988 (10) - Drama
 Same Director Good Morning Vietnam, Barry Levinson, 1988 (10) - Drama
 Unforgiven, Clint Eastwood, 1992 (10) - Drama
+Fargo, Joel Coen, 1996 (10) - Comedy
 Good Will Hunting, Gus Van Sant, 2000 (10) - Drama
 Silence of the Lambs, Jonathan Demme, 1991 (10) - Drama
 Dogfight, Nancy Savoca, 1991 (10) - Drama
+National Lampoon's Animal House, John Landis, 1978 (10) - Comedy
 King of Hearts, Phillippe De Broca, 1967 (10) - Drama
+Pirates of the Caribbean, Different Years, 2000 (10) - Comedy
+Pirates of the Caribbean, Gore Verbinski, 2003 (10) - Comedy
+Sleepless in Seattle, Nora Ephron, 1993 (10) - Comedy
 Schindler's List, Steven Spielberg, 1993 (10) - Drama
+When Harry Met Sally, Rob Reiner, 1989 (10) - Comedy
+You've Got Mail, Nora Ephron, 1998 (10) - Comedy
 History for: Minnie Mouse
 ==================
   No transactions
@@ -131,76 +148,96 @@ History for: Freddie Frog
 History for: Wally Wacky
 ==================
   No transactions
-ERROR: Movie not found: You've Got Mail, 1998
-ERROR: Movie not found: Sleepless in Seattle, 1993
-ERROR: Movie not found: Annie Hall, 1977
-ERROR: Movie not found: When Harry Met Sally, 1989
-ERROR: Movie not found: You've Got Mail, 1998
-ERROR: Movie not found: You've Got Mail, 1998
+Discarding invalid command: B 8000 D F You've Got Mail, 1998
+Discarding invalid command: B 1000 D D Barry Levinson, Good Morning Vietnam,
+Discarding invalid command: B 1000 D C 5 1940 Katherine Hepburn
+Discarding invalid command: B 2000 D F Sleepless in Seattle, 1993
+Discarding invalid command: B 4444 D C 2 1971 Malcolm McDowell
+Discarding invalid command: B 5000 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 8888 D F Annie Hall, 1977
+Discarding invalid command: B 1111 D C 2 1971 Malcolm McDowell
+Discarding invalid command: B 1111 D Z 2 1971 Malcolm McDowell
+Discarding invalid command: B 5000 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 1000 D D Gus Van Sant, Good Will Hunting,
+Discarding invalid command: B 2000 D D Phillippe De Broca, King of Hearts,
+Discarding invalid command: B 1000 D C 5 1940 Cary Grant
+Discarding invalid command: B 1111 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 1000 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 8888 D F When Harry Met Sally, 1989
+Discarding invalid command: B 8888 D D Jonathan Demme, Silence of the Lambs,
+Discarding invalid command: B 9999 D F You've Got Mail, 1998
+Discarding invalid command: B 8000 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 1111 D C 10 1941 Humphrey Bogart
+Discarding invalid command: B 8000 D C 3 1971 Ruth Gordon
 Discarding invalid command: X
+Discarding invalid command: B 1111 D C 9 1938 Cary Grant
+Discarding invalid command: B 5000 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 8888 D D Nancy Savoca, Dogfight,
+Discarding invalid command: B 7777 D D Steven Spielberg, Schindler's List,
 Discarding invalid command: Z 1000 D C 10 1941 Humphrey Bogart
-ERROR: Movie not found: National Lampoon's Animal House, 1978
-ERROR: Movie not found: Fargo, 1996
-ERROR: Customer ID 1234 not found.
-ERROR: Movie not found: Bogus Title, 2001
-ERROR: Movie not found: Fargo, 1996
-ERROR: Movie out of stock: 3 1971 Ruth Gordon
-ERROR: Movie out of stock: 3 1971 Ruth Gordon
-ERROR: Movie out of stock: 3 1971 Ruth Gordon
-ERROR: Movie not found: Steven Spielberg, Bogus Title
-The Maltese Falcon, John Huston, 1941 Humphrey Bogart, October, (9) - Classic
+Discarding invalid command: B 5000 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 8000 D F National Lampoon's Animal House, 1978
+Discarding invalid command: B 8888 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 7777 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 2000 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 2000 D D Nancy Savoca, Dogfight,
+Discarding invalid command: B 9000 D D Clint Eastwood, Unforgiven,
+Discarding invalid command: B 9000 D F Fargo, 1996
+Discarding invalid command: B 1234 D C 2 1971 Malcolm McDowell
+Discarding invalid command: B 1000 D F Bogus Title, 2001
+Discarding invalid command: B 1000 Z F Fargo, 1996
+Discarding invalid command: B 2000 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 9000 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 9000 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 3333 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 7777 D C 3 1971 Ruth Gordon
+Discarding invalid command: B 1000 D D Steven Spielberg, Bogus Title,
+The Maltese Falcon, John Huston, 1941 Humphrey Bogart, October, (10) - Classic
 It's a Wonderful Life, Frank Capra, 1946 Donna Reed, November, (10) - Classic
 It's a Wonderful Life, Frank Capra, 1946 James Steward, November, (10) - Classic
 Gone With the Wind, Victor Fleming, 1939 Clark Gable, February, (10) - Classic
 Gone With the Wind, Victor Fleming, 1939 Vivien Leigh, February, (10) - Classic
-A Clockwork Orange, Stanley Kubrick, 1971 Malcolm McDowell, February, (8) - Classic
-Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (0) - Classic
-The Philadelphia Story, George Cukor, 1940 Cary Grant, May, (9) - Classic
-The Philadelphia Story, George Cukor, 1940 Katherine Hepburn, May, (9) - Classic
+A Clockwork Orange, Stanley Kubrick, 1971 Malcolm McDowell, February, (11) - Classic
+Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (13) - Classic
+The Philadelphia Story, George Cukor, 1940 Cary Grant, May, (10) - Classic
+The Philadelphia Story, George Cukor, 1940 Katherine Hepburn, May, (10) - Classic
 The Wizard of Oz, Victor Fleming, 1939 Judy Garland, July, (10) - Classic
 Casablanca, Michael Curtiz, 1942 Humphrey Bogart, August, (10) - Classic
 Casablanca, Michael Curtiz, 1942 Ingrid Bergman, August, (10) - Classic
-Holiday, George Cukor, 1938 Cary Grant, September, (9) - Classic
+Holiday, George Cukor, 1938 Cary Grant, September, (10) - Classic
 Holiday, George Cukor, 1938 Katherine Hepburn, September, (10) - Classic
-Good Morning Vietnam, Barry Levinson, 1988 (9) - Drama
+Annie Hall, Woody Allen, 1977 (10) - Comedy
+Good Morning Vietnam, Barry Levinson, 1988 (10) - Drama
 Same Director Good Morning Vietnam, Barry Levinson, 1988 (10) - Drama
-Unforgiven, Clint Eastwood, 1992 (9) - Drama
-Good Will Hunting, Gus Van Sant, 2000 (9) - Drama
-Silence of the Lambs, Jonathan Demme, 1991 (9) - Drama
-Dogfight, Nancy Savoca, 1991 (8) - Drama
-King of Hearts, Phillippe De Broca, 1967 (9) - Drama
-Schindler's List, Steven Spielberg, 1993 (9) - Drama
+Unforgiven, Clint Eastwood, 1992 (10) - Drama
+Fargo, Joel Coen, 1996 (10) - Comedy
+Good Will Hunting, Gus Van Sant, 2000 (10) - Drama
+Silence of the Lambs, Jonathan Demme, 1991 (10) - Drama
+Dogfight, Nancy Savoca, 1991 (10) - Drama
+National Lampoon's Animal House, John Landis, 1978 (10) - Comedy
+King of Hearts, Phillippe De Broca, 1967 (10) - Drama
+Pirates of the Caribbean, Different Years, 2000 (10) - Comedy
+Pirates of the Caribbean, Gore Verbinski, 2003 (10) - Comedy
+Sleepless in Seattle, Nora Ephron, 1993 (10) - Comedy
+Schindler's List, Steven Spielberg, 1993 (10) - Drama
+When Harry Met Sally, Rob Reiner, 1989 (10) - Comedy
+You've Got Mail, Nora Ephron, 1998 (11) - Comedy
 History for: Minnie Mouse
 ==================
- Borrowed: Good Morning Vietnam, Barry Levinson, 1988 (9) - Drama
- Borrowed: The Philadelphia Story, George Cukor, 1940 Katherine Hepburn, May, (9) - Classic
- Borrowed: Good Will Hunting, Gus Van Sant, 2000 (9) - Drama
- Borrowed: The Philadelphia Story, George Cukor, 1940 Cary Grant, May, (9) - Classic
- Borrowed: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (8) - Classic
+  No transactions
 History for: Mickey Mouse
 ==================
- Borrowed: A Clockwork Orange, Stanley Kubrick, 1971 Malcolm McDowell, February, (8) - Classic
- Borrowed: A Clockwork Orange, Stanley Kubrick, 1971 Malcolm McDowell, February, (7) - Classic
- Borrowed: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (9) - Classic
- Borrowed: The Maltese Falcon, John Huston, 1941 Humphrey Bogart, October, (9) - Classic
- Borrowed: Holiday, George Cukor, 1938 Cary Grant, September, (9) - Classic
+  No transactions
 History for: Freddie Frog
 ==================
- Borrowed: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (9) - Classic
- Returned: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (10) - Classic
- Borrowed: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (9) - Classic
- Returned: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (10) - Classic
- Borrowed: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (5) - Classic
- Returned: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (6) - Classic
- Borrowed: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (5) - Classic
+ Returned: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (11) - Classic
+ Returned: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (12) - Classic
+ Returned: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (13) - Classic
 History for: Wally Wacky
 ==================
- Borrowed: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (7) - Classic
- Borrowed: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (6) - Classic
+ Returned: You've Got Mail, Nora Ephron, 1998 (11) - Comedy
 History for: Porky Pig
 ==================
- Borrowed: Silence of the Lambs, Jonathan Demme, 1991 (9) - Drama
- Borrowed: Dogfight, Nancy Savoca, 1991 (9) - Drama
- Borrowed: Harold and Maude, Hal Ashby, 1971 Ruth Gordon, March, (4) - Classic
+  No transactions
 End testStoreFinal
 Done!

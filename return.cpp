@@ -6,7 +6,8 @@
 
 Return::Return(int customerId, char mediaType, char movieType,
                const std::string &movieKey)
-    : customerId(customerId), mediaType(1, mediaType), movieType(1, movieType), movieKey(movieKey) {}
+    : customerId(customerId), mediaType(1, mediaType), movieType(1, movieType),
+      movieKey(movieKey) {}
 
 void Return::execute(Inventory &inventory, CustomerTable &manager) {
   Customer *customer = manager.getCustomer(customerId);
@@ -22,7 +23,6 @@ void Return::execute(Inventory &inventory, CustomerTable &manager) {
   }
   movie->increaseStock();
   customer->addTransaction("Returned: " + movie->print());
-
 }
 
 ReturnFactory::ReturnFactory() { registerType("R", this); }

@@ -7,13 +7,13 @@
 
 class Inventory {
 public:
-    void addMovie(Movie* movie);
-    Movie* searchMovie(const std::string& title) const;
-    void printInventory() const;
-    ~Inventory();
+  void addMovie(Movie *movie);
+  Movie *searchMovie(const std::string &title) const;
+  void printInventory() const;
+  ~Inventory();
 
 private:
-    std::map<std::string, Movie*> movies; // Maps movie titles to Movie objects
+  std::map<std::string, Movie *> movies; // Maps movie titles to Movie objects
 };
 
 #endif

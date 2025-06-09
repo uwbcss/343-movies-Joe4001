@@ -17,7 +17,7 @@ void Hashtable<Key, Value>::insert(const Key key, const Value value) {
   for (auto &pair : buckets[index]) {
     if (pair.first == key) {
       return;
-}
+    }
   }
   buckets[index].emplace_back(key, value);
 }
@@ -28,7 +28,7 @@ Value *Hashtable<Key, Value>::get(const Key &key) {
   for (auto &pair : buckets[index]) {
     if (pair.first == key) {
       return &pair.second;
-}
+    }
   }
   return nullptr;
 }
