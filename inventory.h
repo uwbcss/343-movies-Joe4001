@@ -8,7 +8,6 @@
 class Inventory {
 public:
     void addMovie(Movie* movie);
-    void removeMovie(const std::string& title);
     Movie* searchMovie(const std::string& title) const;
     void printInventory() const;
     ~Inventory();

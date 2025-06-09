@@ -16,14 +16,13 @@ Movie* MovieFactory::create(const std::string& data) {
     std::istringstream ss(data);
     std::string movieType;
     std::getline(ss, movieType, ',');
-    // Trim whitespace
     movieType.erase(0, movieType.find_first_not_of(" \t"));
     movieType.erase(movieType.find_last_not_of(" \t") + 1);
 
     if (getMap().count(movieType) == 0) {
-        std::cout << "Do not know how to create movie: " << movieType << std::endl;
+        //std::cout << "Do not know how to create movie: " << movieType << std::endl;
         return nullptr;
     }
-    std::cout<< "Movie: " << data << " added " << std::endl;
+    //std::cout<< "Movie: " << data << " added " << std::endl;
     return getMap().at(movieType)->makeMovie(data);
 }

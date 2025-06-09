@@ -12,6 +12,10 @@
 //     bool operator<(const Movie& other) const override;
 //     std::string print() const override;
 //     std::string getType() const override { return "C"; }
+// std::string Classic::getKey() const {
+//     // Example: "3 1971 Ruth Gordon"
+//     return std::to_string(month) + " " + std::to_string(movieData.year) + " " + majorActor;
+// }
 
 // private:
 //     std::string majorActor;

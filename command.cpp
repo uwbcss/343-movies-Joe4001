@@ -27,7 +27,7 @@ Command* CommandFactory::create(const std::string& data) {
     commandType = trim(commandType);
 
     if (getMap().count(commandType) == 0) {
-        std::cout << "Do not know how to create command: " << commandType << std::endl;
+        //std::cout << "Do not know how to create command: " << commandType << std::endl;
         return nullptr;
     }
     return getMap().at(commandType)->makeCommand(data);

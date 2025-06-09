@@ -22,6 +22,10 @@ void Customer::printHistory() {
   }
 }
 
+const vector<string>& Customer::history() const {
+    return transactionHistory;
+}
+
 Customer* CustomerFactory::create(const std::string& line) {
     std::istringstream ss(line);
     int id;

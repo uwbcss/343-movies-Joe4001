@@ -11,6 +11,9 @@ public:
     bool operator<(const Movie& other) const override;
     std::string print() const override;
     std::string getType() const override { return "F"; }
+    std::string getKey() const {
+    return movieData.title + ", " + std::to_string(movieData.year);
+}
 };
 
 class ComedyFactory : public MovieFactory {

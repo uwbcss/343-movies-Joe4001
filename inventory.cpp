@@ -3,16 +3,15 @@
 
 
 void Inventory::addMovie(Movie* movie) {
-    movies[movie->movieData.title] = movie;
+    movies[movie->getKey()] = movie;
 }
 
-void Inventory::removeMovie(const std::string& title) {
-    movies.erase(title);
-}
 
-Movie* Inventory::searchMovie(const std::string& title) const {
-    auto it = movies.find(title);
-    if (it != movies.end()) return it->second;
+Movie* Inventory::searchMovie(const std::string& key) const {
+    auto it = movies.find(key);
+    if (it != movies.end()) {
+        return it->second;
+    }
     return nullptr;
 }
 

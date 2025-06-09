@@ -1,30 +1,30 @@
-#include "comedy.h"
+#include "drama.h"
 #include <sstream>
 #include <iostream>
 
-Comedy::Comedy(const MovieData& data) {
+Drama::Drama(const MovieData& data) {
     movieData = data;
 }
 
-bool Comedy::operator<(const Movie& other) const {
-    // Sort by title, then year
-    if (movieData.title != other.movieData.title)
-        return movieData.title < other.movieData.title;
-    return movieData.year < other.movieData.year;
+bool Drama::operator<(const Movie& other) const {
+    // Sort by director, then title
+    if (movieData.director != other.movieData.director)
+        return movieData.director < other.movieData.director;
+    return movieData.title < other.movieData.title;
 }
 
-std::string Comedy::print() const {
+std::string Drama::print() const {
     std::ostringstream oss;
-    oss << "F, " << movieData.stock << ", " << movieData.director << ", "
+    oss << "D, " << movieData.stock << ", " << movieData.director << ", "
         << movieData.title << ", " << movieData.year;
     return oss.str();
 }
 
-ComedyFactory::ComedyFactory() {
-    registerType("F", this);
+DramaFactory::DramaFactory() {
+    registerType("D", this);
 }
 
-Movie* ComedyFactory::makeMovie(const std::string& data) const {
+Movie* DramaFactory::makeMovie(const std::string& data) const {
     std::istringstream ss(data);
     char type;
     int stock;
@@ -33,7 +33,7 @@ Movie* ComedyFactory::makeMovie(const std::string& data) const {
 
     // Parse type
     ss >> type;
-    if (type != 'F') return nullptr;
+    if (type != 'D') return nullptr;
     if (ss.peek() == ',') ss.ignore();
     if (ss.peek() == ' ') ss.ignore();
 
@@ -57,7 +57,7 @@ Movie* ComedyFactory::makeMovie(const std::string& data) const {
     md.director = director;
     md.title = title;
     md.year = year;
-    return new Comedy(md);
+    return new Drama(md);
 }
 
-static ComedyFactory globalComedyFactory;
+static DramaFactory globalDramaFactory;

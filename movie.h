@@ -23,6 +23,7 @@ public:
     virtual bool operator<(const Movie& other) const = 0;
     virtual std::string print() const = 0;
     virtual std::string getType() const = 0;
+    virtual std::string getKey() const = 0;
 
     MovieData movieData;
 };
